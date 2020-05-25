@@ -11,8 +11,8 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-}
-    
+	    }
+	    
        #border {
       border: 10px solid #1C6EA4;
       border-radius: 40px 40px 40px 40px;
@@ -43,6 +43,22 @@ background: #FFFFFF;
       
    <link rel="stylesheet" type="text/css" href="mystyle.css">
       
+div.relative {
+  position: relative;
+  width: 250px;
+  height: 500px;
+  border: 10px solid #FFFFFF;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 100px;
+  right: 50;
+  width: 100px;
+  height: 150px;
+  border: 10px solid #FFFFFF;
+}	    
+	    
     </style>
     
   </head>
@@ -96,9 +112,23 @@ background: #FFFFFF;
   <div id = "dot" style="text-align:center">
   <span class="dot"></span>
 </div>
+	
+	<br>
+	<br>
+	
+	<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
   
   <br>
     <br>
+	
+	<img src="http://JEpting-CS.github.io/Inspect_Element.png">
+ 
+<link href="bootstrap.html" rel="import">
+	
+	<br>
+	<br>
   
      <div id="Fact"><a href="https://www.ostraining.com/blog/webdesign/bootstrap-popular/">By 2018, over 18 million people used Bootstrap.</a></div>
   
@@ -107,10 +137,6 @@ background: #FFFFFF;
  <div id="border2">
      <div id="Assignment2-1">
 		<a href="https://graphs.net/interesting-facts-about-css.html">The earliest drafts of CSS were made available in May 1995.</a>
-      </div>
-	 
-<img src="Inspect Element.png">
- 
-link href="extern.html" rel="import" />	 
+      </div>	 
    
 </html>
