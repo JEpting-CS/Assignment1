@@ -17,6 +17,15 @@ li {
   display: inline;
 }
 	    
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+	    
        #border {
       border: 10px solid #1C6EA4;
       border-radius: 40px 40px 40px 40px;
@@ -145,10 +154,12 @@ div.absolute {
 </div>
 	
 <ul>
-<li><p>These</p></li>
-  <li><p> words</p></li>
-  <li><p> are</p></li>
-   <li><p> inline.</p></li>
+<li>These </li>
+  <li> words</li>
+  <li> are</li>
+   <li><p> inline.</li>
 </ul>
+	
+	<div class="sticky">Now this is what I call a sticky situation</div>
    
 </html>
