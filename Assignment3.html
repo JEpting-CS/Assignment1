@@ -258,7 +258,9 @@ function showSign(elem) {
 // you don't have to define the function before you use it! 
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") {elem.children[2].innerHTML = "1";
-      elem.children[3].innerHTML = "-2"; }
+    let currentScore = elem.children[2].innerHTML;
+  let par = elem.children[1].innerHTML;  
+  elem.children[3].innerHTML = currentScore - par;    }
   else {
     let currentScore = elem.children[2].innerHTML;
     let par = elem.children[1].innerHTML; 
@@ -269,8 +271,10 @@ function add1 (elem) {
 }
 
 function subtract1 (elem) {
-   if(elem.children[2].innerHTML == "-") {elem.children[2].innerHTML = "1";
-      elem.children[3].innerHTML = "-2"; }
+   if(elem.children[2].innerHTML == "-") {elem.children[2].innerHTML = "-1";
+  let currentScore = elem.children[2].innerHTML;
+  let par = elem.children[1].innerHTML;  
+  elem.children[3].innerHTML = currentScore - par;                                       }
   else {
     let currentScore = elem.children[2].innerHTML;
     let par = elem.children[1].innerHTML; 
