@@ -233,9 +233,10 @@ th, td {text;html=1;overflow=fill;strokeColor=#000000;strokeWidth=2;fillColor=#f
 	
 <script>
 	// assign the table row for hole 1 to a variable
+// assign the table row for hole 1 to a variable
 var elem
-  = document.getElementById("1");	
-	// display the number of children (all td elements)
+  = document.getElementById("1");
+// display the number of children (all td elements)
 // console.log(elem.children.length);
 // display the content of the + button, which is the first child of the fifth element
 console.log(elem.children[4].children[0]); 
@@ -250,7 +251,7 @@ function showSign(elem) {
   elem.children[2].innerHTML = "-";
   currentScore = 0;
 }
-	
+
 // you don't have to define the function before you use it! 
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") elem.children[2].innerHTML = "1";
