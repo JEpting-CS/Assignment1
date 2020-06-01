@@ -244,7 +244,13 @@ elem.children[4].children[0].onclick
   = function(){add1(elem);};
 elem.children[4].children[1].onclick 
   = function(){subtract1(elem);};
+elem.children[5].children[0].onclick = function(){showSign(elem);};
 
+function showSign(elem) {
+  elem.children[2].innerHTML = "-";
+  currentScore = 0;
+}
+	
 // you don't have to define the function before you use it! 
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") elem.children[2].innerHTML = "1";
@@ -275,6 +281,7 @@ elem2.children[4].children[0].onclick
   = function(){add1(elem2);};
 elem2.children[4].children[1].onclick 
   = function(){subtract1(elem2);};
+	elem.children[5].children[0].onclick = function(){showSign(elem2);};
 
 // you don't have to define the function before you use it! 
 function add1 (elem2) {
