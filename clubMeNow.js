@@ -276,19 +276,5 @@ function newClub() {
 // ------ Functions (newClub.html) ------ //
 ////////////////////////////////////////////////
 
-// TODO: Add new club to the list. 
-function addClub() {
-	// Save the new club to the list.
-	clubs.push(['','']);
-
-	// Store it in local storage. 
-
-	// Warn if > 14 
-	alert('');
-
-	// Refresh to home screen. 
-	window.location.href = "clubMeNow.html";
-}
-
 // TODO: Add error checking for club count > 14. 
 function checkForNewClubErrors() {}
