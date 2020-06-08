@@ -181,7 +181,7 @@ function updateStats(shotDistance=0) {
 
 // navigate to club distance list screen
 function cancelClub() {
-	window.location.href = "assignment4.html";
+	window.location.href = "https://jepting-cs.github.io/assignment4.html";
 }
 
 // navigate to club distance list screen
