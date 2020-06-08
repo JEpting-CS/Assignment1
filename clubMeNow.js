@@ -46,6 +46,9 @@ function resetAllClubDistances() {
 	// store the array in local storage
 	var str = JSON.stringify(clubs);
 	localStorage.setItem("clubs", str);
+	
+	
+	
 	// and refresh screen
 	window.location.href = "clubDistanceList.html"; 
 }
@@ -90,11 +93,18 @@ function appendTableRows() {
 function displayclubDistanceEntryForm(c) {
 	localStorage.setItem("club", c); // save chosen club
 	window.location.href = "clubDistanceEntry.html"; // redirect to entry form
+	
 }
 
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
-        // your code here !
+	
+	delete clubs.5.;
+	
+	// and refresh screen
+	window.location.href = "clubDistanceList.html";
+	
+	
 }
 
 // navigate to "About" screen
@@ -181,7 +191,7 @@ function updateStats(shotDistance=0) {
 
 // navigate to club distance list screen
 function cancelClub() {
-	window.location.href = "https://jepting-cs.github.io/assignment4.html";
+	window.location.href = "clubDistanceList.html"; 
 }
 
 // navigate to club distance list screen
