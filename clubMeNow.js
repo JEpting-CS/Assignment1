@@ -46,9 +46,6 @@ function resetAllClubDistances() {
 	// store the array in local storage
 	var str = JSON.stringify(clubs);
 	localStorage.setItem("clubs", str);
-	
-	
-	
 	// and refresh screen
 	window.location.href = "clubDistanceList.html"; 
 }
@@ -93,18 +90,11 @@ function appendTableRows() {
 function displayclubDistanceEntryForm(c) {
 	localStorage.setItem("club", c); // save chosen club
 	window.location.href = "clubDistanceEntry.html"; // redirect to entry form
-	
 }
 
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
-	
-	delete clubs.5.;
-	
-	// and refresh screen
-	window.location.href = "clubDistanceList.html";
-	
-	
+        // your code here !
 }
 
 // navigate to "About" screen
